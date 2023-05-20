@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========Autor========-->
+    <meta name="author" contente="Marcio Reis">
+    <meta name="description" contente="Projeto do desenvolvedor front-end Marcio Reis">
+    <meta name="keywords"
+    contente="HTML, CSS, SASS, Tailwind, Styled Components, JavaScript, TypeScript, React, Git, GitHub, Jest, Testing Library, SEO, Regex, Acessibilidade web, Scrum, Dev, Desenvolvedor, Front-end">
+    <!--========Icon========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<!--========CSS========-->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--========Favicon========-->
+	
+	<!--========JavaScript========-->
+	<script src="assets/js/main.js" defer></script>
+	<title>school</title>
+</head>
+
+<body>
+	
+	<!--========Header========-->
+	<header class="header">
+		<div class="container">
+			<nav class="navbar">
+				<a href="index.html" class="logo">school</a>
+				<ul class="navbar__links">
+					<div class="overlay"></div>
+					<li class="navbar__link">
+						<a href="#top">início</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#about">sobre</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#methodology">método<i class="uil uil-angle-double-down"></i></a>
+						<div class="dropdown">
+							<div class="dropdown__container">
+								<div class="left">
+									<h4>metodogolia</h4>
+									<p>Vivencie um ambiente seguro e controlado para tomada de decisões estratégicas e aprendizagem em desenvolvimento!</p>
+									<a href="#" class="btn__primary btnRegister">cadastre-se</a>
+								</div>
+								<div class="right">
+									<h4>diferenciais</h4>
+									<ul class="dropdown__links">
+										<li>
+											<span>
+												<i class="uil uil-bag"></i>
+												<div>
+													<h5>experiência</h5>
+													<p>Ganhe experiência prática</p>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span>
+												<i class="uil uil-brackets-curly"></i>
+												<div>
+													<h5>desenvolva</h5>
+													<p>Aprenda a desenvolver produtos</p>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span>
+												<i class="uil uil-dollar-sign-alt"></i>
+												<div>
+													<h5>gráts</h5>
+													<p>Ganhe 14 dias grátis</p>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span>
+												<i class="uil uil-desktop"></i>
+												<div>
+													<h5>carreira</h5>
+													<p>Alavanque sua carreira</p>
+												</div>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="navbar__link">
+						<a href="#case">cases</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#contact">contato</a>
+					</li>
+				</ul>
+				<a href="#" class="btn" id="openRegister"><i class="uil uil-user"></i><span>entrar</span></a>
+				<div class="toggle__btn">
+					<span class="openBtn"><i class="uil uil-bars"></i></span>
+					<span class="closeBtn"><i class="uil uil-times"></i></span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!--========Register========-->
+	<aside class="register">
+        <i class="uil uil-times" id="registerBtn"></i>
+        <div class="register__image-box">
+			<img src="assets/images/register.png" alt="Register image">
+		</div>
+		<div class="register__container-box forms">
+			<div class="form login">
+				<div class="form__content">
+					<h2 class="form__title"><i class="uil uil-user"></i> <span>entrar</span></h2>
+					<form action="">
+						<div class="field input__field">
+							<input type="email" placeholder="E-mail" class="input">
+						</div>
+						<div class="field input__field">
+							<input type="password" placeholder="Senha" class="password">
+						</div>
+						<div class="form__link">
+							<a href="#" class="forgot__password">Esqueceu a senha?</a>
+						</div>
+						<div class="field button__field">
+							<button>entrar</button>
+						</div>
+					</form>
+					<div class="form__link">
+						<span>Tem uma conta? <a href="#" class="link signup__link">Cadastre-se</a></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="form signup">
+				<div class="form__content">
+					<h2 class="form__title"><i class="uil uil-pen"></i> <span>Cadastre-se</span></h2>
+					<h4>Entre em nossa fila de espera</h4>
+					<p>Seja um dos 100 primeiros a se registrar na lista de espera e ganhe 14 dias para alavancar sua carreira no universo de tecnologia.</p>
+					<form action="">
+						<div class="field input__field">
+							<input type="text" placeholder="Nome" class="input">
+						</div>
+						<div class="field input__field">
+							<input type="email" placeholder="E-mail" class="email">
+						</div>
+						<div class="field input__field">
+							<input type="tel" placeholder="Celular" class="cel">
+						</div>
+						<div class="field button__field">
+							<button>cadastre-se</button>
+						</div>
+					</form>
+					<div class="form__link">
+						<span>Tem uma conta? <a href="#" class="link login__link">Entrar</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+    </aside>
+
+	<!--========Home========-->
+	<section class="section home" id="top">
+		<div class="container">
+			<div class="home__container">
+				<div class="home__text">
+					<h2>Aprimore suas habilidades em desenvolvimento em equipe!</h2>
+					<p>Desenvolva hardskills técnicas e softskills em projetos simulados com outras pessoas desenvolvedoras. Treine de forma prática e melhore sua empregabilidade.</p>
+					<a href="#" class="btn__primary homeBtn">cadastre-se agora</a>
+				</div>
+				<div class="home__image">
+					<img src="assets/images/home.png" alt="Home image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main>
+		
+		<!--========About========-->
+		<section class="section about" id="about">
+			<div class="container">
+				<div class="about__container">
+					<div class="about__image">
+						<img src="assets/images/about.png" alt="About image">
+					</div>
+					<article class="about__text">
+						<h2>Você sabe programação!</h2>
+						<h3>Agora só falta saber desenvolver.</h3>
+						<p>Você certamente conhece uma linguagem de programação ou sabe uma coisa ou outra sobre desenvolvimento de produtos, mas será que teve a oportunidade real de testar esses conhecimentos? <span>Já interagiu com uma equipe multidisciplinar de verdade?</span></p>
+						<p>Somos a <strong>school</strong>, uma plataforma que conecta profissionais de tecnologia em projetos práticos com fins de aprendizagem, feita para capacitar uma nova geração de pessoas desenvolvedoras em diferentes abordagens sobre produtos.</p>
+						<small>#vemserschool</small>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!--========Methodology========-->
+		<section class="section methodology" id="methodology">
+			<div class="container">
+				<div class="methodology__container">
+					<div class="methodology__top">
+						<h1>O método <span>school</span></h1>
+						<h3>Vivencie um ambiente seguro e controlado para tomada de decisões estratégicas e aprendizagem em desenvolvimento!</h3>
+					</div>
+					<div class="methodology__content">
+						<div class="methodology__box">
+							<div class="box__image">
+								<img src="assets/images/met1.png" alt="Methodology image">
+							</div>
+							<h4>Escolha um desafio simulado</h4>
+							<p>Temos diferentes desafios e cases para você explorar suas habilidades.
+								Encontre um que se conecte com você.
+							</p>
+						</div>
+						<div class="methodology__box">
+							<div class="box__image">
+								<img src="assets/images/met2.png" alt="Methodology image">
+							</div>
+							<h4>Matchmaking</h4>
+							<p>Vamos buscar para você outros membros que tenham um perfil ideal para seu desafio.</p>
+						</div>
+						<div class="methodology__box">
+							<div class="box__image">
+								<img src="assets/images/met3.png" alt="Methodology image">
+							</div>
+							<h4>Desenvolva em equipe</h4>
+							<p>Você e sua equipe irão desenvolver o desafio com nossa IA de gestão.
+								Defina seu próprio ritmo de desenvolvimento junto a seu time.
+							</p>
+						</div>
+						<div class="methodology__box">
+							<div class="box__image">
+								<img src="assets/images/met4.png" alt="Methodology image">
+							</div>
+							<h4>Seja certificado</h4>
+							<p>Receba um relatório que destaca suas habilidades e obtenha um certificado de senioridade prática.</p>
+						</div>
+					</div>
+
+					<!--========Differentials========-->
+					<div class="differentials" id="differentials">
+						<div class="differentials__top">
+							<h2>O diferencial <span>school</span></h2>
+						</div>
+						<div class="differentials__container">
+							<div class="differentials__box">
+								<div>
+									<i class="uil uil-edit"></i>
+								</div>
+								<div>
+									<h4>Ganhe experiência prática</h4>
+									<p>85% dos candidatos em processos seletivos para cargos de desenvolvimento são reprovados por falta de experiência prática e softskills. Com a school você pode preencher essa lacuna e melhorar suas chances de aprovação.</p>
+								</div>
+							</div>
+							<div class="differentials__box">
+								<div>
+									<i class="uil uil-lightbulb-alt"></i>
+								</div>
+								<div>
+									<h4>Aprenda a desenvolver produtos</h4>
+									<p>A school não busca ensinar programação, mas sim formar equipes de trabalho para aprender a desenvolver produtos. Nossos algoritmos de Matchmaking e Gestão permitem criar uma experiência que só seria possível dentro de uma vaga de trabalho.</p>
+								</div>
+							</div>
+							<div class="differentials__box">
+								<div>
+									<i class="uil uil-usd-circle"></i>
+								</div>
+								<div>
+									<h4>14 dias grátis</h4>
+									<p>Durante 14 dias você poderá desfrutar da plataforma e conhecer melhor projetos e equipes para participar sem custo algum.</p>
+								</div>
+							</div>
+							<div class="differentials__box">
+								<div>
+									<i class="uil uil-bag-alt"></i>
+								</div>
+								<div>
+									<h4>Alavanque sua carreira</h4>
+									<p>Além da experiência prática e o enriquecimento de portfólio, você também recebe uma certificação de senioridade prática para abrir novas portas.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========Banner========-->
+		<section class="section banner" id="important">
+			<div class="container">
+				<div class="banner__container">
+					<h2>Nós não somos...</h2>
+					<div class="banner__box">
+						<div class="box">
+							<div class="box__icon">
+								<i class="uil uil-exclamation-triangle"></i>
+							</div>
+							<div>
+								<h3>Um curso</h3>
+								<p>Nossa proposta é proporcionar um ambiente seguro e eficiente para simulação de projetos. Não ensinamos conteúdos de programação.</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box__icon">
+								<i class="uil uil-exclamation-triangle"></i>
+							</div>
+							<div>
+								<h3>Um marketplace</h3>
+								<p>Você irá conhecer várias pessoas e muitas provavelmente serão contatos valiosos, mas não espere ofertas de freelas ou trabalhos aqui. Pelo menos não por enquanto.</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box__icon">
+								<i class="uil uil-exclamation-triangle"></i>
+							</div>
+							<div>
+								<h3>Coachs</h3>
+								<p>Certamente você irá desenvolver habilidades importantes na sua trajetória, mas não estamos aqui para ditar o que deve e não fazer com sua carreira <small>:-)</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========Dream section========-->
+		<section class="section dream" id="dream">
+			<div class="container">
+				<div class="dream__container">
+					<div class="dream__card">
+						<div class="card__image">
+							<img src="assets/images/dream1.png" alt="Dream image">
+						</div>
+						<div class="card__text">
+							<h2>Tenha sempre um Time do Sonhos</h2>
+							<p>O algoritmo de <strong>Matchmaking Inteligente</strong> coloca você sempre com o time ideal para seu projeto. Não perca mais tempo procurando por pessoas compatíveis, deixe a tecnologia trabalhar para você e impulsione seus projetos e estudos com a equipe certa!</p>
+						</div>
+					</div>
+					<div class="dream__card">
+						<div class="card__image">
+							<img src="assets/images/dream2.png" alt="Dream image">
+						</div>
+						<div class="card__text">
+							<h2>Gestão de projetos? Foque no seu produto.</h2>
+							<p>Por meio de IA, apresentamos um <strong>assistente de projetos para você</strong>. Com capacidade de mediar times e registrar tarefas, você pode focar no que é mais importante: seu produto e sua jornada de aprendizagem.</p>
+						</div>
+					</div>
+					<div class="dream__card">
+						<div class="card__image">
+							<img src="assets/images/dream3.png" alt="Dream image">
+						</div>
+						<div class="card__text">
+							<h2>Aprendizagem com resultados o mercado reconhece</h2>
+							<p>Comprove suas habilidades técnicas e comportamentais de forma gamificada e obtenha uma Certificação de Senioridade Prática. Com um relatório automatizado que destaca suas habilidades, você poderá se destacar no mercado e abrir portas para novas oportunidades. <strong>Nós conectaremos os melhores devs as melhores empresas</strong>!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========Case========-->
+		<section class="sectioon case" id="case">
+			<div class="container">
+				<div class="case__container">
+					<div class="case__card">
+						<div class="case__image">
+							<img src="assets/images/kanban.jpg" alt="Case image">
+						</div>
+						<div class="case__text">
+							<h2>Kanboom</h2>
+							<p>Seja bem vindo ao time de tecnologia da Kanboom, aqui você será responsável por criar nosso primeiro produto: um quadro Kanban 100% voltado para desenvolvedores.</p>
+						</div>
+					</div>
+					<div class="case__card">
+						<div class="case__image">
+							<img src="assets/images/portfolio.jpg" alt="Case image">
+						</div>
+						<div class="case__text">
+							<h2>SeuPortfolio</h2>
+							<p>Estamos procurando desenvolvedores talentosos para se juntarem à equipe da SeuPortfolio, uma ferramenta inovadora de criação de portfolios para desenvolvedores.</p>
+						</div>
+					</div>
+					<div class="case__card">
+						<div class="case__image">
+							<img src="assets/images/medicall.jpg" alt="Case image">
+						</div>
+						<div class="case__text">
+							<h2>MediCall</h2>
+							<p>Estamos procurando desenvolvedores talentosos para se juntarem à equipe da MediCall, um aplicativo inovador de agendamento de consultas médicas.</p>
+						</div>
+					</div>
+					<div class="case__card">
+						<div class="case__image">
+							<img src="assets/images/virtual.jpg" alt="Case image">
+						</div>
+						<div class="case__text">
+							<h2>Vitrine virtual</h2>
+							<p>Seja parte da equipe da Vitrine Virtual, uma plataforma de e-commerce que está revolucionando a forma como as pessoas compram pela internet.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========CTA========-->
+		<section class="section cta">
+			<div class="container">
+				<div class="cta__content">
+					<div class="cta__image">
+						<img src="assets/images/cta.webp" alt="CTA Image">
+					</div>
+					<div class="cta__info">
+						<h2>Comece agora sua jornada de aprendizagem em desenvolvimento em equipe!</h2>
+						<a href="#" class="btn__primary ctaBtn">cadastre-se agora</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+
+	<!--========Footer / Contact========-->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="footer__container">
+				<div class="sec aboutus">
+					<a href="index.html" class="footer__logo">school</a>
+					<p>Somos uma plataforma que conecta profissionais</p>
+					<ul class="footer__socials">
+						<li>
+							<a href="https://br.linkedin.com/" target="_blank"><i class="uil uil-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="sec links">
+					<h3>site</h3>
+					<ul>
+						<li>
+							<a href="#top">início</a>
+						</li>
+						<li>
+							<a href="#about">sobre</a>
+						</li>
+						<li>
+							<a href="#methodology">metodologia</a>
+						</li>
+						<li>
+							<a href="#differentials">diferencial</a>
+						</li>
+						<li>
+							<a href="#important">aviso</a>
+						</li>
+						<li>
+							<a href="#dream">informações</a>
+						</li>
+						<li>
+							<a href="#case">cases</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sec links">
+					<h3>acesso</h3>
+					<a href="#" class="btn__primary footerBtn">entrar</a>
+				</div>
+				<div class="sec contact">
+					<h3>contato</h3>
+					<ul class="contact__info">
+						<li>
+							<a href="#" target="_blank">
+								<span>
+									<i class="uil uil-whatsapp"></i>
+									Whatsapp
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<span>
+									<i class="uil uil-telegram-alt"></i>
+									Telegram
+								</span>
+							</a>
+						</li>
+						<li>
+							<span>
+								<i class="uil uil-envelope-edit"></i>
+								school@gmail.com
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--========Copy========-->
+	<div class="copy">
+		<div class="container">
+			<span>
+				&copy; 2023 <a href="index.html">school</a> - Todos os direitos reservados.
+			</span>
+		</div>
+	</div>
+
+
+</body>
+</html>
